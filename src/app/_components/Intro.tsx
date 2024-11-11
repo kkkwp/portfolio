@@ -21,7 +21,7 @@ export default function Intro() {
           />
           <div className="inline-flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-950 px-4 py-1.5">
             <div className="size-2.5 rounded-full bg-green-500"></div>
-            <div className="text-sm font-medium text-white">
+            <div className="text-sm font-medium">
               Available for new projects
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function Intro() {
           <h1 className="mt-8 text-center text-3xl tracking-wide">
             끊임없이 탐구하는 개발자 정채윤입니다.
           </h1>
-          <p className="mt-4 text-center text-black/60 md:text-lg">
+          <p className="mt-4 text-center text-white/60 md:text-lg">
             개인 시간에 다양한 표준 및 새로운 기술을 익히는 것을 즐깁니다.
             <br />
             공부한 내용들에 대하여 꾸준히 기록을 남기고 실습하면서 체화해오고

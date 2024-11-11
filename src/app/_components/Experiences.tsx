@@ -17,22 +17,27 @@ export default function Experiences() {
           <VerticalTimelineElement
             key={index}
             contentStyle={{
-              background: '#f3f4f6',
+              background: 'rgba(255, 255, 255, 0.05)',
               boxShadow: 'none',
-              border: '1px solid rgba(0,0,0,0.05)',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               textAlign: 'left',
               padding: '1.3rem 2rem',
             }}
-            contentArrowStyle={{ borderRight: '0.4rem solid #9ca3af' }}
+            contentArrowStyle={{
+              borderRight: '0.4rem solid rgba(255, 255, 255, 0.5)',
+            }}
             date={item.date}
             icon={item.icon}
-            iconStyle={{ background: 'white', fontStyle: '1.5rem' }}
+            iconStyle={{
+              background: 'rgba(255, 255, 255, 0.15)',
+              fontStyle: '1.5rem',
+            }}
           >
             <h3 className="font-semibold capitalize text-emerald-400">
               {item.title}
             </h3>
-            <p className="!mt-0 font-normal text-gray-400">{item.location}</p>
-            <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+            <p className="!mt-0 font-normal text-white/40">{item.location}</p>
+            <p className="!mt-1 !font-normal text-white/75">
               {item.description}
             </p>
           </VerticalTimelineElement>
