@@ -10,7 +10,7 @@ import SectionHeading from '@/app/_components/SectionHeading'
 
 export default function Experience() {
   return (
-    <section className="mb-28 scroll-mt-28 sm:mb-40">
+    <section id="experience" className="mb-28 scroll-mt-28 sm:mb-40">
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experienceData.map((item, index) => (

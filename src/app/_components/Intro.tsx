@@ -5,7 +5,7 @@ import { BsArrowDown } from 'react-icons/bs'
 
 export default function Intro() {
   return (
-    <section className="relative z-0 py-32 md:py-48 lg:py-60">
+    <section id="home" className="relative z-0 py-32 md:py-48 lg:py-60">
       <div className="hero-ring size-[620px]" />
       <div className="hero-ring size-[820px]" />
       <div className="hero-ring size-[1020px]" />
