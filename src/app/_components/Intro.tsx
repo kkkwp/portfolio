@@ -44,9 +44,13 @@ export default function Intro() {
             <span className="font-semibold">Explore My Work</span>
             <BsArrowDown className="size-4" />
           </button>
-          <button className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900">
+          <a
+            href="/assets/CV.pdf"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900"
+            download
+          >
             <span className="font-semibold">Download CV</span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
