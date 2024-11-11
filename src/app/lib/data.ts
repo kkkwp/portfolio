@@ -84,6 +84,6 @@ export const experienceData = [
       '비대면계좌개설 서비스의 사용자와 이벤트 유형별로 분기된 복잡한 코드를 분석하고 시각화 / ' +
       '마이데이터 서비스를 위한 표준 API를 바탕으로 테스트 시나리오 작성 및 API 테스트 업무 수행',
     icon: React.createElement(CgWorkAlt),
-    date: '2023.10 - 2023.11',
+    date: '2023.10.23 - 2023.11.22',
   },
 ] as const
