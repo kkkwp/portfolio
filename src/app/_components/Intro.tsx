@@ -40,10 +40,13 @@ export default function Intro() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <button className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6">
+          <a
+            href="#projects"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6"
+          >
             <span className="font-semibold">Explore My Work</span>
             <BsArrowDown className="size-4" />
-          </button>
+          </a>
           <a
             href="/assets/CV.pdf"
             className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900"
