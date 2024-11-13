@@ -9,6 +9,33 @@ export const links = [
   { name: 'Experience', hash: '#experience' },
 ] as const
 
+export const projectsData = [
+  {
+    title: 'Bulls & Bears',
+    date: '2023.10.04 - 2023.10.20',
+    description:
+      'Bulls & Bears는 주식 초보자들이 배당금 수익을 손쉽게 예측할 수 있도록 돕는 웹 서비스로, 안정적인 개발과 배포 환경을 목표로 구축했습니다.',
+    link: 'https://github.com/bulls-and-bears',
+    imageUrl: '/assets/projects/bulls-and-bears.jpg',
+  },
+  {
+    title: 'MusicQ!',
+    date: '2023.03.06 - 2023.04.30',
+    description:
+      'MusicQ!는 WebRTC를 활용해 사용자들이 실시간 화상으로 소통하며 즐길 수 있는 웹 기반 음악 게임입니다. 프론트엔드, 백엔드, CI/CD 설정을 모두 담당하며 성능 최적화와 사용자 경험 개선을 목표로 구축했습니다.',
+    link: 'https://github.com/Dream-Kakao',
+    imageUrl: '/assets/projects/music-q.jpg',
+  },
+  {
+    title: '바름스픽',
+    date: '2021.03.02 - 2021.10.01',
+    description:
+      '바름스픽은 영어 학습자가 실시간으로 발음 교정을 받을 수 있는 서비스로, 사용자의 입모양과 음성을 분석하여 피드백을 제공합니다. 딥러닝 모델과 음성 인식 기술을 활용해 교정 정확도를 높이고, 점수 형태의 피드백을 제공하였습니다.',
+    link: 'https://github.com/Barum-Speak/barumLipNet',
+    imageUrl: '/assets/projects/barum-speak.jpg',
+  },
+] as const
+
 export const skillsData = [
   'Java',
   'Spring Boot',
