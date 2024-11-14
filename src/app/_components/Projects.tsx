@@ -43,8 +43,7 @@ export default function Projects() {
                 </div>
                 <div className="relative">
                   <Image
-                    // src={project.imageUrl}
-                    src="/assets/projects/dark-saas-landing-page.png"
+                    src={project.imageUrl}
                     alt={project.title}
                     width={800}
                     height={507}
