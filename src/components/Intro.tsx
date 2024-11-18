@@ -1,11 +1,21 @@
 'use client'
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { BsArrowDown } from 'react-icons/bs'
+import { useActiveSectionContext } from '@/context/action-section-context'
+import { useSectionInView } from '@/lib/hooks'
 
 export default function Intro() {
+  const { ref } = useSectionInView('Home', 0.5)
+  const { setActiveSection } = useActiveSectionContext()
+
   return (
-    <section id="home" className="relative z-0 py-32 md:py-48 lg:py-60">
+    <section
+      id="home"
+      ref={ref}
+      className="relative z-0 scroll-mt-[100rem] py-32 md:py-48 lg:py-60"
+    >
       <div className="hero-ring size-[620px]" />
       <div className="hero-ring size-[820px]" />
       <div className="hero-ring size-[1020px]" />
@@ -40,13 +50,16 @@ export default function Intro() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <a
+          <Link
             href="#projects"
             className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6"
+            onClick={() => {
+              setActiveSection('Projects')
+            }}
           >
             <span className="font-semibold">Explore My Work</span>
             <BsArrowDown className="size-4" />
-          </a>
+          </Link>
           <a
             href="/assets/CV.pdf"
             className="inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900"

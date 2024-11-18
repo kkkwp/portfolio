@@ -1,11 +1,15 @@
+'use client'
 import Image from 'next/image'
 import { FiArrowUpRight } from 'react-icons/fi'
 import SectionHeading from '@/components/SectionHeading'
+import { useSectionInView } from '@/lib/hooks'
 import { projectsData } from '@/lib/data'
 
 export default function Projects() {
+  const { ref } = useSectionInView('Projects', 0.3)
+
   return (
-    <section id="projects" className="mb-28 scroll-mt-28">
+    <section id="projects" ref={ref} className="mb-28 scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       <div className="container">
         <div className="mt-5 flex flex-col gap-20">

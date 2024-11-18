@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import SectionHeading from '@/components/SectionHeading'
+import { useSectionInView } from '@/lib/hooks'
 import { skillsData } from '@/lib/data'
 
 const fadeInAnimationsVariants = {
@@ -18,9 +19,12 @@ const fadeInAnimationsVariants = {
 }
 
 export default function Skills() {
+  const { ref } = useSectionInView('Skills')
+
   return (
     <section
       id="skills"
+      ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Skills</SectionHeading>
