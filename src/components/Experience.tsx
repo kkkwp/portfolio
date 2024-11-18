@@ -5,8 +5,8 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { experienceData } from '@/app/lib/data'
-import SectionHeading from '@/app/_components/SectionHeading'
+import SectionHeading from '@/components/SectionHeading'
+import { experienceData } from '@/lib/data'
 
 export default function Experience() {
   return (

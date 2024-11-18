@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { links } from '@/app/lib/data'
+import { links } from '@/lib/data'
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState('Home')

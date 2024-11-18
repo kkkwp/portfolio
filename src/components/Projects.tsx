@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FiArrowUpRight } from 'react-icons/fi'
-import { projectsData } from '@/app/lib/data'
-import SectionHeading from '@/app/_components/SectionHeading'
+import SectionHeading from '@/components/SectionHeading'
+import { projectsData } from '@/lib/data'
 
 export default function Projects() {
   return (

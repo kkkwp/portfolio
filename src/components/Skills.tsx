@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
-import { skillsData } from '@/app/lib/data'
-import SectionHeading from '@/app/_components/SectionHeading'
+import SectionHeading from '@/components/SectionHeading'
+import { skillsData } from '@/lib/data'
 
 const fadeInAnimationsVariants = {
   initial: {

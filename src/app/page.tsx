@@ -1,8 +1,8 @@
-import Intro from '@/app/_components/Intro'
-import Projects from '@/app/_components/Projects'
-import Skills from '@/app/_components/Skills'
-import Header from '@/app/_components/Header'
-import Experience from '@/app/_components/Experience'
+import Header from '@/components/Header'
+import Intro from '@/components/Intro'
+import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 
 export default function Home() {
   return (
