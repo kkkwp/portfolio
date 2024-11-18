@@ -4,9 +4,11 @@ import { FiArrowUpRight } from 'react-icons/fi'
 import SectionHeading from '@/components/SectionHeading'
 import { useSectionInView } from '@/lib/hooks'
 import { projectsData } from '@/lib/data'
+import { useActiveSectionContext } from '@/context/action-section-context'
 
 export default function Projects() {
   const { ref } = useSectionInView('Projects', 0.3)
+  const { setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section id="projects" ref={ref} className="mb-28 scroll-mt-28">
@@ -29,7 +31,12 @@ export default function Projects() {
                     {project.description}
                   </span>
                   <div className="flex flex-col gap-4 md:flex-row lg:text-sm">
-                    <button className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-emerald-300 px-8 font-semibold text-black md:w-auto">
+                    <button
+                      className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-emerald-300 px-8 font-semibold text-black md:w-auto"
+                      onClick={() => {
+                        setTimeOfLastClick(Date.now())
+                      }}
+                    >
                       <span>상세 내역</span>
                       <span>📖</span>
                     </button>
