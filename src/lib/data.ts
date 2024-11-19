@@ -11,6 +11,7 @@ export const links = [
 
 export const projectsData = [
   {
+    id: 3,
     title: 'Bulls & Bears',
     date: '2023.10.04 - 2023.10.20',
     description:
@@ -19,6 +20,7 @@ export const projectsData = [
     imageUrl: '/assets/projects/bulls-and-bears.png',
   },
   {
+    id: 2,
     title: 'MusicQ!',
     date: '2023.03.06 - 2023.04.30',
     description:
@@ -27,6 +29,7 @@ export const projectsData = [
     imageUrl: '/assets/projects/music-q.png',
   },
   {
+    id: 1,
     title: '바름스픽',
     date: '2021.03.02 - 2021.10.01',
     description:
