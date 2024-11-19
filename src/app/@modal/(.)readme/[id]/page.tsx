@@ -1,10 +1,16 @@
 import Readme from '@/components/Readme'
 import { Modal } from '@/components/Modal'
 
-export default function ReadmePage({ params }: { params: { id: string } }) {
+export default async function ReadmePage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const resolvedParams = await params
+
   return (
     <Modal>
-      <Readme id={params.id} />
+      <Readme id={resolvedParams.id} />
     </Modal>
   )
 }
