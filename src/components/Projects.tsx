@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import { FiArrowUpRight } from 'react-icons/fi'
 import SectionHeading from '@/components/SectionHeading'
 import { useSectionInView } from '@/lib/hooks'
@@ -31,15 +32,14 @@ export default function Projects() {
                     {project.description}
                   </span>
                   <div className="flex flex-col gap-4 md:flex-row lg:text-sm">
-                    <button
+                    <Link
+                      href={`/readme/${project.id}`}
                       className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-emerald-300 px-8 font-semibold text-black md:w-auto"
-                      onClick={() => {
-                        setTimeOfLastClick(Date.now())
-                      }}
+                      onClick={() => setTimeOfLastClick(Date.now())}
                     >
                       <span>상세 내역</span>
                       <span>📖</span>
-                    </button>
+                    </Link>
                     <a
                       href={project.link}
                       target="_blank"
