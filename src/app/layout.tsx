@@ -1,5 +1,5 @@
-import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
+import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -9,16 +9,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  modal,
-}: Readonly<{
-  children: React.ReactNode
-  modal: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko" className="!scroll-smooth">
       <body className="bg-gray-900 text-white antialiased">
         {children}
-        {modal}
         <Analytics />
       </body>
     </html>
