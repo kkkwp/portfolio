@@ -1,10 +1,9 @@
 'use client'
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { BsArrowDown } from 'react-icons/bs'
 import { useActiveSectionContext } from '@/context/action-section-context'
 import { useSectionInView } from '@/lib/hooks'
+import Image from 'next/image'
+import Link from 'next/link'
+import { BsArrowDown } from 'react-icons/bs'
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5)
@@ -16,11 +15,6 @@ export default function Intro() {
       ref={ref}
       className="relative z-0 scroll-mt-[100rem] py-32 md:py-48 lg:py-60"
     >
-      <div className="hero-ring size-[620px]" />
-      <div className="hero-ring size-[820px]" />
-      <div className="hero-ring size-[1020px]" />
-      <div className="hero-ring size-[1220px]" />
-
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
