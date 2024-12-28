@@ -5,7 +5,6 @@ import { FaReact } from 'react-icons/fa'
 export const links = [
   { name: 'Home', hash: '#home' },
   { name: 'Projects', hash: '#projects' },
-  { name: 'Skills', hash: '#skills' },
   { name: 'Experience', hash: '#experience' },
 ] as const
 
@@ -38,41 +37,6 @@ export const projectsData = [
     imageUrl: '/assets/projects/dark-saas-landing-page.png',
     // imageUrl: '/assets/projects/barum-speak.png',
   },
-] as const
-
-export const skillsData = [
-  'Java',
-  'Spring Boot',
-  'Spring MVC',
-  'Spring Security',
-  'Spring Data JPA',
-  'Gradle',
-  'Maven',
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Recoil',
-  'Tailwind',
-  'Styled Components',
-  'MySQL',
-  'MariaDB',
-  'Redis',
-  'AWS',
-  'Jenkins',
-  'ArgoCD',
-  'Github Action',
-  'Docker',
-  'Linux',
-  'Git',
-  'Figma',
-  'Slack',
-  'Notion',
-  'Jira',
-  'Python',
-  'Flask',
 ] as const
 
 export const experienceData = [
