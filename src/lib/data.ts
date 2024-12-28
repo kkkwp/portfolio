@@ -4,6 +4,7 @@ import { FaReact } from 'react-icons/fa'
 
 export const links = [
   { name: 'Home', hash: '#home' },
+  { name: 'Work', hash: '#work' },
   { name: 'Projects', hash: '#projects' },
   { name: 'Experience', hash: '#experience' },
 ] as const
