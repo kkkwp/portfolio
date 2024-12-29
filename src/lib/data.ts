@@ -1,5 +1,4 @@
 import React from 'react'
-import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 
 export const links = [
@@ -7,6 +6,25 @@ export const links = [
   { name: 'Work', hash: '#work' },
   { name: 'Projects', hash: '#projects' },
   { name: 'Experience', hash: '#experience' },
+] as const
+
+export const workData = [
+  {
+    company: '신한투자증권',
+    department: 'ICT본부',
+    position: '인턴',
+    date: '2023.10.23 - 2023.11.22',
+    task: [
+      'JSP, Spring으로 작성된 비대면계좌개설 서비스 소스 코드 분석 업무 수행. 사용자 유입 경로와 이벤트 유형별로 분기된 복잡한 코드를 분석하고 이를 Flow Chart로 시각화',
+      '마이데이터 서비스를 위한 표준 API를 이해하고 이를 바탕으로 테스트 시나리오 작성 및 금융보안원 테스트베드를 활용한 API 테스트 수행',
+      'Git, GitLab, Confluence를 활용한 협업 및 문서화 업무 수행',
+    ],
+    achievement: [
+      '비대면계좌개설 서비스의 기존 소스 코드 중 비효율적인 코드 구성 개선으로 서비스 품질 향상에 기여',
+      '사용자 유입 경로나 이벤트 유형에 따라 분기된 비대면계좌개설 서비스의 프로세스를 시각화한 Flow Chart를 사내 Wiki에 게시. 해당 자료는 타 팀원들이 참고 자료로 활용하여 업무 능률을 향상시킴',
+      '마이데이터 서비스 테스트 단계에서 발견된 오류를 해결하여 실서비스 품질 개선에 기여',
+    ],
+  },
 ] as const
 
 export const projectsData = [
@@ -41,15 +59,6 @@ export const projectsData = [
 ] as const
 
 export const experienceData = [
-  {
-    title: '신한투자증권 인턴',
-    location: 'ICT본부',
-    description:
-      '비대면계좌개설 서비스의 사용자와 이벤트 유형별로 분기된 복잡한 코드를 분석하고 시각화 / ' +
-      '마이데이터 서비스를 위한 표준 API를 바탕으로 테스트 시나리오 작성 및 API 테스트 업무 수행',
-    icon: React.createElement(CgWorkAlt),
-    date: '2023.10.23 - 2023.11.22',
-  },
   {
     title: '신한투자증권 프로 디지털 아카데미',
     location: '신한투자증권, 서울경제진흥원 청년취업사관학교(SeSAC)',
