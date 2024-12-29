@@ -92,3 +92,9 @@ export const experienceData = [
     date: '2020.04.06 - 2020.11.28',
   },
 ] as const
+
+export const footerLinks = [
+  { title: 'Github', link: 'https://github.com/kkkwp' },
+  { title: 'Blog', link: 'https://chxrryda.tistory.com/' },
+  { title: 'Email', link: 'mailto:chxrryda@gmail.com' },
+] as const
